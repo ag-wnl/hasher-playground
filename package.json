@@ -1,0 +1,11 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "description": "Playing with hashes",
+  "main": "index.js",
+  "author": "0xag22",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
