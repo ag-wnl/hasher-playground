@@ -1,16 +1,10 @@
-const crypto = require("crypto")
+console.log(`
 
-const prefixHash = (prefix, message) => {
-    let nonce = 0;
-    while(true) {
-        const cur = nonce.toString() + message.toString();
-        const hash = crypto.createHash('sha256').update(cur).digest('hex');
-        
-        console.log("Current hash - ", hash, " | Nonce - ", nonce);
-        if(hash.startsWith(prefix)) return hash
-        nonce++
-    }
-}
-
-const resHash = prefixHash('000', 'ag sent 100 USDC to vitalik')
-console.log("Hash - ", resHash)
+    _______             .___       __________.__                                                     .___
+    \      \   ____   __| _/____   \______   \  | _____  ___.__. ___________  ____  __ __  ____    __| _/
+    /   |   \ /  _ \ / __ |/ __ \   |     ___/  | \__  \<   |  |/ ___\_  __ \/  _ \|  |  \/    \  / __ | 
+   /    |    (  <_> ) /_/ \  ___/   |    |   |  |__/ __ \\___  / /_/  >  | \(  <_> )  |  /   |  \/ /_/ | 
+   \____|__  /\____/\____ |\___  >  |____|   |____(____  / ____\___  /|__|   \____/|____/|___|  /\____ | 
+           \/            \/    \/                      \/\/   /_____/                         \/      \/ 
+       
+`)
